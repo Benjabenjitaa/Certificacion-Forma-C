@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificación Forma C</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <!-- Primer contenedor con la imagen y los textos -->
+        <div class="navbar-top">
+            <div class="navbar-logo">
+                <img src="images/heart-light.png" alt="Logo">
+                <h1>Pet Shelter</h1>
+            </div>
+            <div class="navbar-links">
+                <p>Find a Pet</p>
+                <p>About</p>
+                <button id="btn-donate" class="btn-donate" onclick="hideDonate()">Donate</button> <!-- Botón Donate -->
+            </div>
+        </div>
+    
+        <!-- Barra secundaria debajo del navbar -->
+        <div class="navbar-bottom">
+            <div class="selectors">
+                <div class="select-wrapper">
+                    <p>I´m looking for a ...</p>
+                    <div class="select-container">
+                        <img src="images/paw-light.png" alt="Icon 1" class="select-icon">
+                        <select>
+                            <option value="option1">Any Pet</option>
+                            <option value="option2">Cat</option>
+                            <option value="option3">Dog</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="select-wrapper">
+                    <p>in or near ...</p>
+                    <div class="select-container">
+                        <img src="images/pin-light.png" alt="Icon 2" class="select-icon">
+                        <input type="text" placeholder="City or Zip Code" class="input-location">
+                    </div>
+                </div>
+            </div>
+            <button class="btn-find">Find my new best friend</button>
+        </div>
+    </div>
+
+    <!--Separador-->
+    <div class="separador-container2">
+        <div class="separador2"></div>
+    </div>
+    <!-- Fin Separador -->
+
+    <!-- Rectángulos con imágenes, títulos y botones -->
+    <div class="content-boxes">
+        <div class="content-box">
+            <div class="content-box-left">
+                <img src="images/pepper.jpg" alt="Image 1">
+            </div>
+            <div class="content-box-right">
+                <h3>Pepper</h3>
+                <p>Pepper is a slightly shy grey tabby, but she really loves showing her human affection.</p>
+                <div class="petting-counter">
+                    <p id="petting-count-1">0 Petting(s)</p>
+                    <button id="petting-button-1" class="petting-button">Pet Pepper</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <div class="content-box-left">
+                <img src="images/bruce.jpg" alt="Image 2">
+            </div>
+            <div class="content-box-right">
+                <h3>Bruce</h3>
+                <p>Bruce is a loyal companion. He loves long walks and cold weather.</p>
+                <div class="petting-counter">
+                    <p id="petting-count-2">0 Petting(s)</p>
+                    <button id="petting-button-2" class="petting-button">Pet Bruce</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <div class="content-box-left">
+                <img src="images/oscar.jpg" alt="Image 3">
+            </div>
+            <div class="content-box-right">
+                <h3>Oscar</h3>
+                <p>Osacar is bright, energetic, and friendly. He is looking for a good home</p>
+                <div class="petting-counter">
+                    <p id="petting-count-3">0 Petting(s)</p>
+                    <button id="petting-button-3" class="petting-button">Pet Oscar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="alertas.js"></script>
+</body>
+</html>

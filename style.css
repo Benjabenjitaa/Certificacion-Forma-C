@@ -1,0 +1,244 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #00bcd4; /* Color cian */
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Primer contenedor con la imagen y los textos */
+.navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 50px;
+    height: auto;
+}
+
+.navbar-logo h1 {
+    color: white;
+    margin-left: 20px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.navbar-links p {
+    color: rgb(0, 0, 0);
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Estilos para el botón Donate */
+.btn-donate {
+    background-color: white;
+    color: #9c27b0;
+    font-size: 16px;
+    border: 2px solid #9c27b0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-donate:hover {
+    background-color: #9c27b0;
+    color: white;
+}
+
+/* Barra secundaria con los selectores */
+.navbar-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Contenedor de los selectores */
+.selectors {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Añadimos espacio entre los selectores */
+}
+
+/* Contenedor de cada select con la imagen */
+.select-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alineamos el contenido a la izquierda */
+    color: white;
+    gap: 5px; /* Añadimos un poco de espacio entre el texto y el select */
+}
+
+/* Imagen al lado del select */
+.select-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.select-icon {
+    width: 30px;
+    height: auto;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 200px; /* Ajustamos el ancho del select */
+    text-align: left; /* Alineamos el texto a la izquierda */
+}
+
+/* Estilos para el input de tipo texto */
+.input-location {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 200px;
+    text-align: left;
+}
+
+/* Estilos para el botón */
+.btn-find {
+    background-color: #9c27b0; /* Morado */
+    color: white;
+    font-size: 16px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 250px; /* Hacemos el botón más ancho */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0; /* Eliminamos el margen superior para que quede alineado */
+    height: 50px; /* Igualamos la altura del botón con la de los selects */
+}
+
+.btn-find:hover {
+    background-color: #7b1fa2; /* Color más oscuro al hacer hover */
+}
+
+/* Separador */
+.separador-container2 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.separador2 {
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    margin: 0px 0;
+    opacity: 100%;
+}
+
+/* Contenedor de los rectángulos */
+.content-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 900px;  /* Limitar el ancho máximo de los rectángulos */
+    margin: 0 auto; /* Centrar los rectángulos */
+}
+
+/* Estilo de los rectángulos */
+.content-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ocupa todo el espacio disponible en el contenedor */
+}
+
+/* Contenedor de la imagen */
+.content-box-left {
+    width: 20%;
+}
+
+.content-box-left img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Contenedor de texto y contador */
+.content-box-right {
+    width: 100%;
+    padding-left: 20px;
+    text-align: left; /* Alineación a la derecha */
+}
+
+.content-box-right h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.content-box-right p {
+    color: #555;
+}
+
+/* Estilos para el contador y el botón */
+.petting-counter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alineamos a la derecha el contador y el botón */
+    gap: 10px; /* Añadimos espacio entre el contador y el botón */
+}
+
+.petting-counter p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Botón "Pet Pepper" */
+.petting-button {
+    background-color: #00bcd4;
+    color: white;
+    border: 2px solid #00bcd4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.petting-button:hover {
+    background-color: #0097a7;
+}
